@@ -1,0 +1,21 @@
+name = "loveslut-media-proxy"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+
+[ai]
+binding = "AI"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "loveslut-media"
+database_id = "e1a818b1-38c8-469d-ba78-1178da88e2d8"
+
+[[kv_namespaces]]
+binding = "CACHE"
+id = "b854594b13384345a3a7f9b167fcd6f6"
+
+[[services]]
+binding = "SHARED_BRAIN"
+service = "echo-shared-brain"
+
+# RUNPOD_ENDPOINT_ID set via wrangler secret
