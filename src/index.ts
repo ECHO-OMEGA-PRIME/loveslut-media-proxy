@@ -760,6 +760,7 @@ export default {
     const url = new URL(request.url);
 
     // Public endpoints (no auth)
+    if (url.pathname === '/') return json({ service: 'loveslut-media-proxy', status: 'operational' });
     if (url.pathname === '/health') return handleHealth(env);
     if (url.pathname === '/characters') return handleCharacters();
     if (url.pathname === '/cost') return handleCostEstimate(request);
