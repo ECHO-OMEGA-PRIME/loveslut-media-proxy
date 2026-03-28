@@ -19,3 +19,7 @@ binding = "SHARED_BRAIN"
 service = "echo-shared-brain"
 
 # RUNPOD_ENDPOINT_ID set via wrangler secret
+
+[[analytics_engine_datasets]]
+binding = "ANALYTICS"
+dataset = "echo_metrics"

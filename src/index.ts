@@ -766,7 +766,7 @@ export default {
 
     // Auth check for all other endpoints
     const apiKey = request.headers.get('X-Echo-API-Key');
-    if (apiKey !== (env.ECHO_API_KEY || 'echo-omega-prime-forge-x-2026')) {
+    if (apiKey !== env.ECHO_API_KEY) {
       return json({ error: 'Unauthorized' }, 401);
     }
 
